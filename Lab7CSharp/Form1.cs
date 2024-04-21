@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Lab7CSharp
 {
@@ -20,6 +21,22 @@ namespace Lab7CSharp
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string  text1;
+            text1 = textBox1.Text;
+            if (text1 != "")
+            {
+
+                richTextBox1.Text += DateTime.Now.ToString() +"   "+ text1+"\n";
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
